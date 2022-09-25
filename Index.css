@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+
+img{
+    margin: 0;
+    width: 12%;
+    padding: 0;
+}
+
+.Navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0em 1em;
+    background-color:#000;
+}
+
+.logo{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.logo h3{
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'anton', cursive;
+    letter-spacing: .1em;
+    margin-left: -1em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+
+.nav a{
+    color: #fff;
+    padding:0 .7em;
+    text-transform: capitalize;
+    font-family: 'anton', cursive;
+    letter-spacing: .1em;
+    transition: .5s ease;
+}
+
+.nav a:hover{
+    text-align: center;
+    background-color: rgb(26, 3, 109);
+    border-radius: .2em;
+}
+
+.connect{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+}
+
+.connect span{
+    background-color: rgb(26, 3, 109);
+    color: #fff;  
+    padding: 0 .7em;
+    font-size: 1.1rem;
+    font-family: 'anton', cursive;
+    border-radius: .1em;
+}
+
+.connect span:hover{
+    background-color: rgb(16, 7, 48);
+}
+
+
+
+.Content{
+    background-image:  linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url('/Background-Image.jpg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 92vh;
+}
