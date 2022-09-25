@@ -14,9 +14,13 @@ body::-webkit-scrollbar {
 
 
 img{
-    margin: 0;
+    padding: .5 1em;
     width: 12%;
-    padding: 0;
+}
+
+a{
+    cursor: pointer;
+    color: #fff;
 }
 
 .Navigation{
@@ -31,7 +35,7 @@ img{
 
 .logo{
     display: flex;
-    justify-items: center;
+    justify-items: space-between;
     align-items: center;
 }
 
@@ -40,7 +44,6 @@ img{
     font-size: 1rem;
     font-family: 'anton', cursive;
     letter-spacing: .1em;
-    margin-left: -1em;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -48,7 +51,6 @@ img{
 .nav{
     display: flex;
     flex-direction: row;
-    width: 60%;
 }
 
 .nav a{
@@ -66,27 +68,18 @@ img{
     border-radius: .2em;
 }
 
-.connect{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 15%;
+.Nav-button{
+    width: 10%;
+    display: none;
 }
 
-.connect span{
-    background-color: rgb(26, 3, 109);
-    color: #fff;  
-    padding: 0 .7em;
-    font-size: 1.1rem;
-    font-family: 'anton', cursive;
-    border-radius: .1em;
+.Nav-button  div{
+    width: 50%;
+    margin-bottom: .6em;
+    border-radius: .3em;
+    height: .2em;
+    background-color: #fff;
 }
-
-.connect span:hover{
-    background-color: rgb(16, 7, 48);
-}
-
 
 
 .Content{
@@ -95,4 +88,15 @@ img{
     background-size: cover;
     background-repeat: no-repeat;
     height: 92vh;
+}
+
+
+@media screen and (max-width:1000px) {
+    .nav{
+        display: none;
+    }
+
+    .Nav-button{
+        display: block;
+    }
 }
