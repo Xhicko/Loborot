@@ -24,7 +24,7 @@ a{
 
 .Navigation{
     display: flex;
-    padding: 0 .5em;
+    padding:1em;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -68,13 +68,13 @@ a{
 }
 
 .Nav-button{
-    width: 05%;
+    width: 50px;
     display: none;
 }
 
 .Nav-button  div{
     width: 100%;
-    margin-bottom: .6em;
+    margin-bottom: .3em;
     border-radius: .3em;
     height: .2em;
     background-color: #fff;
@@ -88,6 +88,14 @@ a{
     background-repeat: no-repeat;
     height: 92vh;
 }
+
+ @media screen and (max-width:350px) {
+    .Nav-button{
+        width: 55px;
+    }
+    
+}
+
 
 
 @media screen and (max-width:1000px) {
@@ -111,6 +119,21 @@ a{
        transition: .5s ease-in-out;
        border-bottom-left-radius: 1em;
        border-bottom-right-radius: 1em;
+    }
+
+    .ham.active :nth-child(1){
+        transform:  translateY(4px) rotate(45deg);
+        transition: .5s ease-in-out;
+    }
+
+    .ham.active :nth-child(2){
+        opacity: 0;
+        transition: .5s ease-in-out;
+    }
+    
+    .ham.active :nth-child(3){
+        transform:  translateY(-12px) rotate(-45deg);
+        transition: .5s ease-in-out;
     }
 
     .nav.active{
